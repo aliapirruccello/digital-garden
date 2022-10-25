@@ -8,12 +8,18 @@ const passport = require('passport')
 const session = require('express-session')
 const MongoStore = require('connect-mongo')
 const connectDB = require('./config/db')
+const cloudinary = require("cloudinary").v2;
+const multer = require("multer");
+
 
 // LOAD CONFIG
 dotenv.config({path: './config/config.env'})
 
 //LOAD PASSPORT
 require('./config/passport')(passport)
+
+//Load cloudinary 
+require("dotenv").config({ path: "./config/.env" });
 
 connectDB()
 
@@ -78,6 +84,28 @@ app.use(
 // PASSPORT MIDDLEWARE
 app.use(passport.initialize())
 app.use(passport.session())
+
+//Cloudinary Middleware 
+cloudinary.config({
+  cloud_name: process.env.CLOUD_NAME,
+  api_key: process.env.API_KEY,
+  api_secret: process.env.API_SECRET,
+});
+
+module.exports = cloudinary;
+
+//Multer Middleware 
+module.exports = multer({
+  storage: multer.diskStorage({}),
+  fileFilter: (req, file, cb) => {
+    let ext = path.extname(file.originalname);
+    if (ext !== ".jpg" && ext !== ".jpeg" && ext !== ".png") {
+      cb(new Error("File type is not supported"), false);
+      return;
+    }
+    cb(null, true);
+  },
+});
 
 //SET GLOBAL VARIABLE
 app.use(function(req, res, next){
