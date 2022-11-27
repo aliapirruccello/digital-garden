@@ -10,7 +10,7 @@ const MongoStore = require('connect-mongo');
 const connectDB = require('./config/db');
 const cloudinary = require("cloudinary").v2;
 const multer = require("multer");
-const app = express();
+
 
 
 // LOAD CONFIG
@@ -22,7 +22,9 @@ require('./config/passport')(passport)
 //Load cloudinary 
 require("dotenv").config({ path: "./config/.env" });
 
-connectDB()
+connectDB();
+
+const app = express();
 
 //BODY PARSER
 app.use(express.urlencoded({ extended: false}))
@@ -124,5 +126,5 @@ const PORT = process.env.PORT || 3000
 
 app.listen(
     PORT, 
-    console.log(`Server running on ${process.env.NODE_ENV} mode on PORT ${PORT}`)
+    console.log(`Server running on ${process.env.PORT} mode on PORT ${PORT}`)
     )
