@@ -4,7 +4,7 @@
   "description": "App to keep track of client appointments",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon server.js",
+    "start": "cross-env NODE_ENV=production node app",
     "dev": "cross-env NODE_ENV=development nodemon app",
     "build:css": "postcss public/styles/tailwind.css -o public/styles/styles.css"
   },

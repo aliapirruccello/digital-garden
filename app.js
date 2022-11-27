@@ -1,15 +1,16 @@
-const path = require('path')
-const express = require('express')
-const dotenv = require('dotenv')
-const morgan = require('morgan')
-const exphbs = require('express-handlebars')
-const methodOverride = require('method-override')
-const passport = require('passport')
-const session = require('express-session')
-const MongoStore = require('connect-mongo')
-const connectDB = require('./config/db')
+const path = require('path');
+const express = require('express');
+const dotenv = require('dotenv');
+const morgan = require('morgan');
+const exphbs = require('express-handlebars');
+const methodOverride = require('method-override');
+const passport = require('passport');
+const session = require('express-session');
+const MongoStore = require('connect-mongo');
+const connectDB = require('./config/db');
 const cloudinary = require("cloudinary").v2;
 const multer = require("multer");
+const app = express();
 
 
 // LOAD CONFIG
@@ -23,7 +24,7 @@ require("dotenv").config({ path: "./config/.env" });
 
 connectDB()
 
-const app = express()
+
 
 //BODY PARSER
 app.use(express.urlencoded({ extended: false}))
