@@ -5,7 +5,6 @@
   "main": "app.js",
   "scripts": {
     "start": "cross-env NODE_ENV=production node app",
-    "dev": "cross-env NODE_ENV=development nodemon app",
     "build:css": "postcss public/styles/tailwind.css -o public/styles/styles.css",
   },
   "author": "Alia Pirruccello",
