@@ -1,7 +1,7 @@
 {
-  "name": "rose-and-co",
+  "name": "digital-garden",
   "version": "1.0.0",
-  "description": "App to keep track of client appointments",
+  "description": "App to store your ideas and writing",
   "main": "app.js",
   "scripts": {
     "start": "nodemon app.js",
