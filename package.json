@@ -1,10 +1,10 @@
 {
-  "name": "digital-garden",
+  "name": "rose-and-co",
   "version": "1.0.0",
   "description": "App to store your ideas and writing",
   "main": "app.js",
   "scripts": {
-    "start": "--omit=dev cross-env NODE_ENV=production node app",
+    "start": "cross-env NODE_ENV=production node app",
     "dev": "cross-env NODE_ENV=development nodemon app",
     "build:css": "postcss public/styles/tailwind.css -o public/styles/styles.css"
   },
