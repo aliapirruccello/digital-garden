@@ -4,13 +4,14 @@
   "description": "App to keep track of client appointments",
   "main": "app.js",
   "scripts": {
-    "start": "cross-env NODE_ENV=production node app",
+    "start": "nodemon app.js",
     "dev": "cross-env NODE_ENV=development nodemon app",
     "build:css": "postcss public/styles/tailwind.css -o public/styles/styles.css"
   },
   "author": "Alia Pirruccello",
   "license": "MIT",
   "dependencies": {
+    "cross-env": "^7.0.3",
     "cloudinary": "^1.32.0",
     "connect-mongo": "^4.6.0",
     "dotenv": "^16.0.2",
@@ -27,7 +28,7 @@
     "passport-google-oauth20": "^2.0.0"
   },
   "devDependencies": {
-    "cross-env": "^7.0.3",
+    
     "nodemon": "^2.0.20"
   }
 }
