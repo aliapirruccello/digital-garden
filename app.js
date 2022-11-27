@@ -24,8 +24,6 @@ require("dotenv").config({ path: "./config/.env" });
 
 connectDB()
 
-
-
 //BODY PARSER
 app.use(express.urlencoded({ extended: false}))
 app.use(express.json())
