@@ -1,12 +1,4 @@
-# Full Stack App to store Client Informatin
-## This is an app that I was inspired to build to make it easier when mixing color formulas at the salon 
-
-App for hairstylists to keep track of client formulas and haircuts
-![rose-and-co](https://user-images.githubusercontent.com/98843063/197874742-379936ca-91f8-4ab4-ade9-8c290dbc120d.gif)
-
-
-
-Here is a link to the website: [(https://rose-and-co.cyclic.app/)]
+# Full Stack App to store writing/blog posts/creative ideas
 
 # Tech used
 
