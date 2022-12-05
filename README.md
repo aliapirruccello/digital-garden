@@ -6,7 +6,7 @@ HTML5, CSS3, JavaScript, Node, MongoDB, Express, Handlebars
 
 # Optimizations
 
-When I improve this project, I want to be able to include pictures with the formula cards.
+When I improve this project, I want to be able to include pictures with the blog posts.
 
 # Lessons Learned
 
