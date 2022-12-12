@@ -10,7 +10,7 @@ When I improve this project, I want to be able to include pictures with the blog
 
 # Lessons Learned
 
-I learned how to use Handlebars with this app.
+Worked with more understanding of both Handlebars and Google Oauth
 
 
 
@@ -24,7 +24,7 @@ I learned how to use Handlebars with this app.
 # Things to add
 
 - Create a `.env` file in config folder and add the following as `key = value`
-  - PORT = 2121 (can be any port example: 3000)
+  - PORT = 3000
   - DB_STRING = `your database URI`
   - CLOUD_NAME = `your cloudinary cloud name`
   - API_KEY = `your cloudinary api key`
