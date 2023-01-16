@@ -30,7 +30,7 @@ Worked with more understanding of both Handlebars and Google Oauth
   - API_KEY = `your cloudinary api key`
   - API_SECRET = `your cloudinary api secret`
   - GOOGLE_CLIENT_ID = `your google client id`
-  - GOOGLE_CLIENT_SECRET = `your goog client secret`
+  - GOOGLE_CLIENT_SECRET = `your google client secret`
 
 ---
 
